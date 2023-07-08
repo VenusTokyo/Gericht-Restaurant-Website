@@ -27,6 +27,14 @@ const Navbar = () => (
         <a href="#contacts">Contacts</a>
       </li>
     </ul>
+    <div className="app__navbar-login">
+      <a href="#login" className='p__opensans'>Log In /Register</a>
+      <div/>
+      <a href="/" className='p__opensans'>Book Table</a>
+    </div>
+    <div className="app__navbar-smallscreen">
+      <GiHamburgerMenu color='#fff' fontSize={27} onClick={()=>{}}/>
+    </div>
   </nav>
 );
 
