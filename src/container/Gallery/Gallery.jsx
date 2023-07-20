@@ -20,7 +20,7 @@ const scroll =(direction)=>{
 }
  return(
   <div className='app__gallery flex__center'>
-    <div className="ap__gallery-content">
+    <div className="app__gallery-content">
       <SubHeading title='Instagram'/>
       <h1 className="headtext__cormorant">Photo Gallery</h1>
       <p className="p__opensans" style={{color:'#aaa'}}>
@@ -32,7 +32,10 @@ const scroll =(direction)=>{
     <div className="app__gallery-imgs-container" ref={scrollRef}>
 {
   image.map((image,index)=>(
-    <div className="app__gallery-imgs_card"></div>
+    <div className="app__gallery-imgs_card  flex__center" key={`gallery_image-${index+1}`}>
+      <img src={image} alt="img" />
+      <BsInstagram className='gallery__img-icon'/>
+    </div>
   ))
 }
 
