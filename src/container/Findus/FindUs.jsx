@@ -1,8 +1,8 @@
 import React from 'react';
 
 const FindUs = () => (
-  <div>
-    FindUs
+  <div className='app__findus flex__center'>
+    
   </div>
 );
 
